@@ -10,7 +10,7 @@ Base configuration
 env.site_name = 'boundaries'
 
 env.project_name = 'boundaries'
-env.database_password = 'TODO'
+env.database_password = ''
 env.site_media_prefix = "site_media"
 env.admin_media_prefix = "admin_media"
 env.newsapps_media_prefix = "na_media"
@@ -20,7 +20,7 @@ env.env_path = '%(path)s/env' % env
 env.repo_path = '%(path)s/repository' % env
 env.apache_config_path = '/home/newsapps/sites/apache/%(project_name)s' % env
 env.python = 'python2.6'
-env.repository_url = 'TODO/%(project_name)s.git' % env
+env.repository_url = 'git://github.com/hampelm/Detroit-Boundaryservice.git'
 
 """
 Environments
@@ -30,9 +30,9 @@ def production():
     Work on production environment
     """
     env.settings = 'production'
-    env.hosts = ['TODO']
+    env.hosts = ['ec2-184-72-159-144.compute-1.amazonaws.com']
     env.user = 'newsapps'
-    env.s3_bucket = 'TODO'
+    env.s3_bucket = 'boundaries.detroitledger.org'
 
 def staging():
     """

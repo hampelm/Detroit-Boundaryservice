@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 *.pyc
 *.swp
 .DS_Store
 *sass-cache
 local_settings.py
+=======
+pip-log.txt
+*.pyc
+>>>>>>> 4f58c885590e70c0cb409d36e98d7fb5f4c9cf16
