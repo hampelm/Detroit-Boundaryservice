@@ -9,10 +9,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'boundaries',
-        'HOST': 'TODO',
+        'PASSWORD': 'tener',
+        'DATABASE_USER': 'boundaries',
+        'HOST': 'localhost',
         'PORT': '5432',
-        'USER': 'TODO',
-        'PASSWORD': 'TODO'
     }
 }
 

@@ -82,11 +82,11 @@ def setup():
     setup_virtualenv()
     clone_repo()
     checkout_latest()
+    install_requirements()
     destroy_database()
     create_database()
     sql_init()
     syncdb()
-    install_requirements()
     install_apache_conf()
     deploy_requirements_to_s3()
 

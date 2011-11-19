@@ -7,11 +7,9 @@ TEMPLATE_DEBUG = DEBUG
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'boundaries',
-        'HOST': 'TODO',
-        'PORT': '5432',
-        'USER': 'TODO',
-        'PASSWORD': 'TODO'
+        'NAME': 'boundary',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
