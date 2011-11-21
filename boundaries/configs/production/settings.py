@@ -19,8 +19,9 @@ DATABASES = {
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = 'http://TODO/boundaries/'
-ADMIN_MEDIA_PREFIX = 'http://TODO/boundaries/admin_media/'
+
+MEDIA_URL = 'http://s3.amazonaws.com/boundaries.detroitledger.org/boundaries/'
+ADMIN_MEDIA_PREFIX = 'http://s3.amazonaws.com/boundaries.detroitledger.org/boundaries/admin_media/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'TODO'
@@ -40,7 +41,7 @@ CACHES = {
     }
 }
 # S3
-AWS_S3_URL = 's3://TODO/boundaries/'
+AWS_S3_URL = 's3://boundaries.detroitledger.org/boundaries/'
 
 API_DOMAIN = 'TODO'
 

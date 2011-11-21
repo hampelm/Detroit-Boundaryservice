@@ -34,7 +34,7 @@ DATABASES = {
 TIME_ZONE = 'America/Chicago'
 
 # Local language
-LANGUAGE_CODE = 'en-gb'
+LANGUAGE_CODE = 'en-us'
 
 # Site framework
 SITE_ID = 1

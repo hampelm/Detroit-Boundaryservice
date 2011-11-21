@@ -237,6 +237,8 @@ def destroy_database(cmd=run):
 
 def syncdb():
     with cd(env.repo_path):
+        run('export DEPLOYMENT_TARGET=production')
+        run('echo $DEPLOYMENT_TARGET')
         run('source %(env_path)s/bin/activate; ./manage syncdb --noinput --all' % env)
         run('source %(env_path)s/bin/activate; ./manage migrate --fake' % env)
     
